@@ -9,6 +9,7 @@ namespace QLGiaiDau.Controllers
     public class HomeController : Controller
     {
         public ActionResult TrangChu() { return View(); }
+        public ActionResult LoginPage() { return View(); }
         public ActionResult Index()
         {
             return View();
