@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "DangKyDoiBong";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2>Đăng Ký Đội Bóng</h2>
+<form method="post" action="@Url.Action("DangKyDoiBong", "Home")" class="team-registration-form">
+    <div class="form-group">
+        <label for="teamName">Tên đội bóng</label>
+        <input type="text" id="teamName" name="teamName" class="form-control" placeholder="Nhập tên đội bóng" required />
+    </div>
+
+    <div class="form-group">
+        <label for="university">Trường</label>
+        <input type="text" id="university" name="university" class="form-control" placeholder="Nhập tên trường" required />
+    </div>
+
+    <div class="form-group">
+        <label for="coach">HLV trưởng</label>
+        <input type="text" id="coach" name="coach" class="form-control" placeholder="Nhập tên HLV trưởng" required />
+    </div>
+
+    <div class="form-group">
+        <label for="foundedYear">Năm Thành Lập</label>
+        <input type="number" id="foundedYear" name="foundedYear" class="form-control" placeholder="Nhập năm thành lập" required />
+    </div>
+
+    <div class="form-group">
+        <label for="stadium">Sân Vận Động</label>
+        <input type="text" id="stadium" name="stadium" class="form-control" placeholder="Nhập tên sân vận động" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Đăng Ký</button>
+</form>
+
+<h2>Danh Sách Cầu Thủ</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Hiện tại chưa có cầu thủ nào trong danh sách.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã Cầu Thủ</th>
+                <th>Tên Cầu Thủ</th>
+                <th>Ngày Sinh</th>
+                <th>Vị Trí Chơi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var player in Model)
+            {
+                <tr>
+                    <td>@player.PlayerID</td>
+                    <td>@player.PlayerName</td>
+                    <td>@player.BirthDate.ToShortDateString()</td>
+                    <td>@player.Position</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<!-- Nút bấm thêm cầu thủ và đăng ký -->
+<div class="text-center mt-3">
+    <a href="@Url.Action("ThemCauThu", "Home")" class="btn btn-primary mx-2">Thêm Cầu Thủ</a>
+</div>
+<div class="text-center mt-3">
+    <a href="@Url.Action("DangKy", "Home")" class="btn btn-primary mx-2">Quay lại</a>
+</div>

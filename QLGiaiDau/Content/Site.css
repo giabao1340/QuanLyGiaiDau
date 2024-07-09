@@ -84,32 +84,34 @@ h4 {
     justify-content: center; /* Căn giữa theo chiều ngang */
 }
 .button-container {
+    padding-top:200px;
     display: flex;
-    flex-wrap: wrap; /* Cho phép các nút bấm xuống hàng khi cần */
-    justify-content: center; /* Căn giữa các nút bấm theo chiều ngang */
-    gap: 50px; /* Khoảng cách giữa các nút bấm */
-    padding: 20px; /* Khoảng cách giữa các nút bấm và viền của container */
+    flex-wrap: wrap; /* Cho phép các button xuống hàng khi không còn đủ không gian */
+    justify-content: center; /* Căn giữa các button theo chiều ngang */
+    gap: 30px; /* Khoảng cách giữa các button */
+    padding: 20px; /* Khoảng cách giữa các button và viền của container */
 }
 
 .image-button {
-    width: 120px;
-    height: 150px;
+    width: 120px; /* Chiều rộng của button */
+    height: 150px; /* Chiều cao của button */
     background-color: #000000; /* Màu nền đen */
-    border: none; /* Bỏ border mặc định */
+    border: none; /* Xóa border mặc định */
     border-radius: 5px; /* Bo góc cho button */
     display: flex; /* Để căn giữa nội dung */
-    flex-direction: column; /* Để đặt hình ảnh và chữ theo chiều dọc */
+    flex-direction: column; /* Đặt hình ảnh và chữ theo chiều dọc */
     align-items: center; /* Căn giữa theo chiều ngang */
     justify-content: center; /* Căn giữa theo chiều dọc */
     cursor: pointer; /* Con trỏ chuột khi hover */
     padding: 0; /* Xóa padding để chỉ hiển thị hình ảnh và chữ */
     box-sizing: border-box; /* Để padding và border được tính vào kích thước tổng thể */
-    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển màu nền và phóng to khi hover */
+    text-decoration: none; /* Xóa gạch chân */
 }
 
     .image-button img {
         width: 60px; /* Đặt kích thước hình ảnh */
-        height: 60px;
+        height: 60px; /* Đặt kích thước hình ảnh */
         object-fit: cover; /* Đảm bảo hình ảnh phủ kín button */
     }
 
@@ -132,3 +134,117 @@ h4 {
             color: #ffffff; /* Đảm bảo màu chữ trắng vẫn giữ nguyên khi hover */
         }
 
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004080;
+    }
+.team-registration-form {
+    max-width: 500px; /* Thu nhỏ kích thước form */
+    margin: 0 auto; /* Căn giữa form */
+    padding: 20px; /* Thêm padding cho form */
+    background-color: #2C3240; /* Màu nền của form */
+    border-radius: 10px; /* Bo góc cho form */
+}
+
+    .team-registration-form h2 {
+        color: #333; /* Màu chữ tiêu đề */
+        font-size: 24px; /* Kích thước chữ tiêu đề */
+        margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    }
+
+.form-group {
+    margin-bottom: 20px; /* Dãn dòng giữa các trường */
+}
+
+    .form-group label {
+        display: block;
+        color: #fff; /* Màu chữ của các label */
+        font-weight: bold;
+        margin-bottom: 5px; /* Khoảng cách giữa label và input */
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #007bff; /* Màu đường viền của các input */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004080;
+    }
+
+/* Cấu hình bảng hiển thị danh sách cầu thủ */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .table th, .table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .table th {
+        background-color: #2C3240; /* Màu nền của tiêu đề cột */
+        color: #fff; /* Màu chữ của tiêu đề cột */
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Màu nền của các hàng chẵn */
+    }
+
+    .table tr:hover {
+        background-color: #ddd; /* Màu nền khi di chuột qua hàng */
+    }
+
+/* Cấu hình các nút bấm */
+
+.btn-add, .btn-register {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff; /* Màu chữ */
+    background-color: #2C3240; /* Màu nền */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .btn-add:hover, .btn-register:hover {
+        background-color: #1f242f; /* Màu nền khi di chuột qua nút */
+    }

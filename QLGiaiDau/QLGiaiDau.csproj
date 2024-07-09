@@ -198,6 +198,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\avt.png" />
     <Content Include="images\Background.jpg" />
+    <Content Include="images\bxh.png" />
+    <Content Include="images\DangKyDB.png" />
+    <Content Include="images\ketqua.png" />
+    <Content Include="images\laplichthidau.png" />
+    <Content Include="images\league.png" />
     <Content Include="Models\EntitiesDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>EntitiesDB.edmx</DependentUpon>
@@ -249,6 +254,11 @@
     <Content Include="Views\Shared\_MasterLayout.cshtml" />
     <Content Include="Views\Home\TrangChu.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Home\DangKyDoiBong.cshtml" />
+    <Content Include="Views\Home\GhiNhanKetQua.cshtml" />
+    <Content Include="Views\Home\LapBangXepHang.cshtml" />
+    <Content Include="Views\Home\LapLichThiDau.cshtml" />
+    <Content Include="Views\Home\LapBangDau.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
