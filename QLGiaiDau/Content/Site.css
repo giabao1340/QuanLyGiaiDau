@@ -1,0 +1,134 @@
+﻿body {
+    background-image: url("../images/Background.jpg");
+    background-size: cover;   /* Đảm bảo hình nền bao phủ toàn bộ màn hình */
+    background-repeat: no-repeat;/*Không lặp lại hình nền */
+    background-attachment: fixed; /* Giữ hình nền cố định khi cuộn trang */
+}
+h2 {
+    font-size: 36px; /* Kích thước chữ lớn */
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #ffffff; /* Màu chữ trắng */
+    padding: 10px; /* Khoảng cách giữa chữ và viền */
+    border-radius: 5px; /* Bo góc cho nền */
+    margin-top: 30px; /* Khoảng cách từ phần tử phía trên */
+    margin-bottom: 20px; /* Khoảng cách từ phần tử phía dưới */
+}
+
+/* Add this to your site's CSS file */
+#login-form-container {
+    max-width: 300px;
+    margin: 50px auto; /* Center the form horizontally and add vertical spacing */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better focus */
+    background-color: #f9f9f9; /* Optional: Add background color for better contrast */
+    text-align: center;
+}
+
+    #login-form-container h4 {
+        text-align: center; /* Center the heading */
+        margin-bottom: 20px; /* Add space below the heading */
+        color: #000; /* Set the color to black */
+        font-weight: bold; /* Make the text bold */
+    }
+
+.form-horizontal .form-group {
+    margin-bottom: 15px; /* Add space between form groups */
+}
+
+.form-horizontal .control-label {
+    display: block;
+    margin-bottom: 5px; /* Add space below labels */
+    text-align: left; /* Align labels to the left */
+}
+
+.form-horizontal .form-control {
+    width: 100%; /* Make input fields take the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.form-horizontal .btn {
+    width: 100%; /* Make the submit button full width */
+    padding: 10px; /* Add padding to the button */
+}
+h4 {
+    color:blue;
+}
+/* Các quy tắc CSS khác */
+
+.navbar-nav.ms-auto {
+    margin-left: auto; /* Đẩy các mục ở bên phải */
+}
+
+.navbar-nav .btn-primary {
+    background-color: #007bff; /* Màu nền của nút */
+    border-color: #007bff; /* Màu viền của nút */
+}
+
+    .navbar-nav .btn-primary:hover {
+        background-color: #0056b3; /* Màu nền khi di chuột lên nút */
+        border-color: #00409a; /* Màu viền khi di chuột lên nút */
+    }
+.custom-button {
+    width: 120px;
+    height: 150px;
+    background-color: #000000; /* Màu nền đen */
+    color: #ffffff; /* Màu chữ trắng */
+    border: none; /* Bỏ border mặc định */
+    border-radius: 5px; /* Bo góc cho button */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    display: flex; /* Căn giữa nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các nút bấm xuống hàng khi cần */
+    justify-content: center; /* Căn giữa các nút bấm theo chiều ngang */
+    gap: 50px; /* Khoảng cách giữa các nút bấm */
+    padding: 20px; /* Khoảng cách giữa các nút bấm và viền của container */
+}
+
+.image-button {
+    width: 120px;
+    height: 150px;
+    background-color: #000000; /* Màu nền đen */
+    border: none; /* Bỏ border mặc định */
+    border-radius: 5px; /* Bo góc cho button */
+    display: flex; /* Để căn giữa nội dung */
+    flex-direction: column; /* Để đặt hình ảnh và chữ theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    padding: 0; /* Xóa padding để chỉ hiển thị hình ảnh và chữ */
+    box-sizing: border-box; /* Để padding và border được tính vào kích thước tổng thể */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+}
+
+    .image-button img {
+        width: 60px; /* Đặt kích thước hình ảnh */
+        height: 60px;
+        object-fit: cover; /* Đảm bảo hình ảnh phủ kín button */
+    }
+
+    .image-button p {
+        color: #ffffff; /* Màu chữ trắng */
+        margin: 10px 0 0 0; /* Căn chỉnh chữ cách hình ảnh */
+        font-size: 14px; /* Kích thước chữ */
+        text-align: center; /* Căn giữa chữ */
+    }
+
+    .image-button:hover {
+        background-color: #2C323A; /* Màu nền xám khi hover */
+    }
+
+        .image-button:hover img {
+            filter: brightness(0.8); /* Làm tối hình ảnh khi hover */
+        }
+
+        .image-button:hover p {
+            color: #ffffff; /* Đảm bảo màu chữ trắng vẫn giữ nguyên khi hover */
+        }
+

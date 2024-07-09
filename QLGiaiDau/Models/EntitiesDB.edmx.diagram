@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9d499eb0ebf34f56876a2d936875cb3b" Name="Diagram1">
+        <EntityTypeShape EntityType="QLGiaiDauModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGiaiDauModel.MANAGER" Width="1.5" PointX="5.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGiaiDauModel.MatchDetail" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGiaiDauModel.Match" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGiaiDauModel.Player" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGiaiDauModel.Team" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGiaiDauModel.TeamTournament" Width="1.5" PointX="6" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGiaiDauModel.Tournament" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="QLGiaiDauModel.FK__MatchDeta__Match__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGiaiDauModel.FK__MatchDeta__Playe__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGiaiDauModel.FK__Matches__AwayTea__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGiaiDauModel.FK__Matches__HomeTea__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGiaiDauModel.FK__Players__TeamID__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGiaiDauModel.FK__TeamTourn__TeamI__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGiaiDauModel.FK__TeamTourn__Tourn__59063A47" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
